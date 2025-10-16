@@ -1,8 +1,9 @@
 version: '3.9'
 services:
   evolution-api:
-    build: .
+    build: 
     container_name: evolution_api
+    image: atendai/evolution-api:v2.2.3
     restart: always
     ports:
       - "8080:8080"
@@ -80,3 +81,4 @@ services:
 volumes:
   redis_data:
   postgres_data:
+
